@@ -27,14 +27,11 @@ export class ListComponent {
         this.products.set(products);
       },
       error: () => {
-        
+
       }
     })
   }
-
-
   addToCart(product: Product){
     this.cartService.addToCart(product);
   }
-
 }
